@@ -1,0 +1,2 @@
+module OutsideTheBoxHelper
+end

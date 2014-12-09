@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'outside_the_box/home'
+
+  get 'outside_the_box/info'
+
+  get 'outside_the_box/product'
+
+  get 'outside_the_box/release'
+
+  get 'outside_the_box/contact'
+
+  get 'outside_the_box/shopping_cart'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
