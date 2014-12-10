@@ -1,2 +1,71 @@
-<h1>OutsideTheBox#home</h1>
-<p>Find me in app/views/outside_the_box/home.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js">
+  </script>
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+  <title>Outside The Box</title>
+
+</head>
+
+<body>
+<%= image_tag "outside_the_box.png" %>
+
+  <nav>
+    <ul>
+      <li><a href="/shops">Home</a></li>
+      <li><a href="">Products</a></li>
+      <ul>
+      <li><a href="/products">In-Stock</a></li>
+      <li><a href="/releases">Upcoming Releases</a></li>
+      </ul>
+      <li><a href="">Information</a></li>
+      <ul> 
+        <li><a href="/about">About Us</a></li> 
+        <li><a href="/contact">Contact</a></li> 
+      </ul>
+  </ul>
+  </nav> 
+
+  <div id="slideshow">
+    <div>
+      <%= image_tag "mj.png" %>
+    </div>
+    
+    <div>
+      <%= image_tag "nb.png" %>
+    </div>
+    
+    <div>
+      <%= image_tag "marvel.png" %>
+    </div>
+   
+   <div>
+    <%= image_tag "nike1.png" %>
+   </div>
+
+   <div>
+    <%= image_tag "nike2.png" %>
+   </div>
+
+  </div>
+
+  <div id="footer">
+
+  </div>
+  
+  <div class="terms">
+    <span style="font-size: 9px">
+      <a href="privacy-policy">TERMS OF USE</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="privacy-policy">PRIVACY POLICY</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;©2014 AKZ &amp; Video, LLC. All Rights Reserved
+    </span>
+  </div>
+  </div> 
+
+</body>
+</html>
