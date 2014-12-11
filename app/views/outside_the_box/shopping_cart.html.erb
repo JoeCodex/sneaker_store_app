@@ -14,3 +14,17 @@
 
 
 <h2>Your Shopping Cart</h2>
+
+<% if @products.empty? %>
+  <strong>Cart is Currently Empty</strong>
+<% else %>
+  <ul>
+    <% @products.each do |product| %>
+      <li>
+        <a href=<%= "/shops/#{ product.shop_id }/products/#{ product.id }" %>>
+        <%= product.name %>
+        </a>:   <em><%= product.price %></em>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
