@@ -10,8 +10,6 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 },  3000);
-
-<<<<<<< HEAD
 });
 
 
@@ -25,6 +23,4 @@ setInterval(function() {
 //     .end()
 //     .appendTo('#slideshow');
 // },  3000);
-=======
-});
->>>>>>> 6cff08e5a92c26bc54b489ac473971c3cd9d4286
+
