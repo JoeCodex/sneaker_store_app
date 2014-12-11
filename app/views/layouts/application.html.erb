@@ -2,13 +2,70 @@
 <html>
 <head>
   <title>SneakerStoreApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+  <body>
 
-</body>
+    <div class="grand_container">
+
+      <header>
+        <div>
+          <%= image_tag "outside_the_box.png" %>
+        </div>
+        <p class="button tel">1.800.123 4567</p>
+
+        <div class="socialmedia sm_top">
+              <a href="https://www.facebook.com/profile.php?id=100008563961501" target="_blank" class="sm_img"><%= image_tag "social_media_logo_40px/facebook_40px.png" %></a>
+              <a href="https://twitter.com/Official_OTB" target="_blank" class="sm_img"><%= image_tag "social_media_logo_40px/twitter_40px.png" %></a>
+              <a href="http://instagram.com/outsidetheboxkicks?ref=badge" class="sm_img"><%= image_tag "social_media_logo_40px/instagram_40px.png" %></a>
+            </a>
+        </div>
+
+        <a href="#" class="button">Shopping Bag</a>
+
+        <p class="brand"><span class="brandname">Outside the Box</span> <br /> "Your ultimate sneaker store"</p>
+
+     </header>
+
+        <div class="mid_container">
+                    <nav>
+              <ul>
+                <li><a href="/">Home</a></li>
+                   <li><a href="/products">Products</a></li>
+
+
+                <li><a href="/services">Release Dates</a></li>
+                  <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+          </nav>
+
+     <%= yield %>
+
+
+      </div>
+
+      <footer>
+
+          <div class="socialmedia">
+                <a href="https://www.facebook.com/profile.php?id=100008563961501" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" /></a>
+                <a href="https://twitter.com/Official_OTB" target="_blank"><img src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+                <a href="http://instagram.com/outsidetheboxkicks?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
+              </a>
+          </div>
+         <div class="terms">
+              <span style="font-size: 9px">
+                <a href="privacy-policy">TERMS OF USE</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="privacy-policy">PRIVACY POLICY</a>
+                  &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;©2014 AKZ &amp; Video, LLC. All Rights Reserved
+              </span>
+           </div>
+      </footer>
+
+    </div>
+  </body>
 </html>

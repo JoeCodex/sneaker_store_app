@@ -13,3 +13,217 @@
  *= require_tree .
  *= require_self
  */
+
+  /** {
+    border: 2px solid red;
+  }*/
+ body {
+       margin: 0;
+       padding: 0;
+
+        background: #466368;
+        /*background: -webkit-linear-gradient(#648880, #293f50);
+        background:    -moz-linear-gradient(#648880, #293f50);
+        background:         linear-gradient(#648880, #293f50);*/
+        background-color: #243030;
+}
+
+.grand_container {
+    width: 960px;
+    min-height: 800px;
+    margin: 0 auto;
+    background-color: #243030;
+    /*background: radial-gradient(#648880, #293f50);*/
+}
+
+header {
+    height: 150px;
+    width: 960px;
+    position: relative;
+}
+
+img.logo {
+    height: 150px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+.sm_top {
+  width: 180px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 240px;
+}
+
+.sm_img {
+  padding: 0 4px;
+}
+
+.button {
+    display: inline-block;
+    height: 40px;
+    width: 120px;
+    border: 2px solid rgba(33, 68, 72, 0.59);
+    background: #2C5463;
+    color: white;
+    text-align: center;
+    font: bold .9em/40px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    vertical-align: middle;
+    border-radius: 5px;
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+a.button {
+    text-decoration: none;
+}
+
+a.button:hover {
+    background: orange;
+  }
+.tel {
+       margin: 0;
+       width: 150px;
+       position: absolute;
+       right: 485px;
+}
+
+.brand {
+  width: 640px;
+  position: absolute;
+  right: 0;
+  top:32px;
+  height: 100px;
+  background: black;
+  text-align: center;
+  color: white;
+  background-color: #2C5463;
+  border-radius: 10px;
+  font: bold 2em/50px "Carter One", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* Single-direction drop shadow */
+
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+    display: inline-block;
+    width: 60%;
+}
+
+.brandname {
+font-family: "Lobster"}
+
+.mid_container {
+   position: relative;
+}
+
+/*.menu {
+    width: 130px;
+    height: 40px;
+}*/
+/* ********  START NAV MENU  ************************* */
+
+nav {
+   background-color:#2C5463;
+   height:40px;
+   position: absolute;
+   right: 0;
+}
+
+
+nav ul {
+  font-family: Arial, Verdana;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: block;
+ # position: relative;
+  float: left;
+
+}
+
+nav li ul {
+  display: none;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  background: #2C5463;
+  color: #ffffff;
+  margin-left: 1px;
+  white-space: nowrap;
+  height:30px; /* Width and height of top-level nav items */
+  width:161px;
+  text-align:center;
+
+}
+
+nav ul li a:hover {
+  background: #617F8A;
+}
+
+nav li:hover ul {
+  display: block;
+  position: absolute;
+  height:30px;
+}
+
+nav li:hover li {
+  float: none;
+  font-size: 11px;
+
+}
+
+nav li:hover a {
+  background: #3A464F;
+  height:30px; /* Height of lower-level nav items is shorter than main level */
+}
+
+nav li:hover li a:hover {
+  background: #95A9B1;
+}
+
+nav ul li ul li a {
+    text-align:left; /* Top-level items are centered, but nested list items are left-aligned */
+}
+
+/* ******* END NAV MENU **************************************************** */
+
+#slider1_container{ border: 3px solid red;
+    width: 700px;
+    height: 466px;
+    /*position: absolute;
+    top: 400px;
+    left: 180px;*/
+}
+
+div#slideshow {
+     top: 100px;
+}
+
+.slider {
+     margin: 0 auto;
+     position: relative;
+}
+
+footer {
+  width: 960px;
+  height: 100px;
+  margin-top: 200px;
+}
+.socialmedia, .terms {
+  display: block;
+  text-align: center;
+}
