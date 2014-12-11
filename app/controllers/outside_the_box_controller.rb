@@ -6,6 +6,7 @@ class OutsideTheBoxController < ApplicationController
   end
 
   def product
+    @products = Product.all
   end
 
   def release

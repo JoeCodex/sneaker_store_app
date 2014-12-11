@@ -1,2 +1,30 @@
-<h1>OutsideTheBox#shopping_cart</h1>
-<p>Find me in app/views/outside_the_box/shopping_cart.html.erb</p>
+<nav>
+<ul>
+		<li><a href="/">Home</a></li>
+    	<li><a href="">Products</a>
+	<ul>
+     	<li><a href="/product">In-Stock</a></li>
+     	<li><a href="/release">Upcoming Releases</a></li>
+   	</ul>
+     	<li><a href="/info">About Us</a></li> 
+    	<li><a href="/contact">Contact</a></li> 
+     	</li>
+</ul>
+</nav> 
+
+
+<h2>Your Shopping Cart</h2>
+
+<% if @products.empty? %>
+  <strong>Cart is Currently Empty</strong>
+<% else %>
+  <ul>
+    <% @products.each do |product| %>
+      <li>
+        <a href=<%= "/shops/#{ product.shop_id }/products/#{ product.id }" %>>
+        <%= product.name %>
+        </a>:   <em><%= product.price %></em>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

@@ -1,2 +1,88 @@
-<h1>OutsideTheBox#product</h1>
-<p>Find me in app/views/outside_the_box/product.html.erb</p>
+<nav>
+<ul>
+		<li><a href="/">Home</a></li>
+    	<li><a href="">Products</a>
+	<ul>
+     	<li><a href="/product">In-Stock</a></li>
+     	<li><a href="/release">Upcoming Releases</a></li>
+   	</ul>
+     	<li><a href="/info">About Us</a></li> 
+    	<li><a href="/contact">Contact</a></li> 
+     	</li>
+</ul>
+</nav> 
+<% @products.each do |product| %>
+
+<%= image_tag product.photo.url(:medium) %> <br>
+<%= product.name %> <br>
+$<%= product.price/100.00 %> <br>
+<%= product.description %>
+
+
+<% end %>
+
+<h2>Current Stock</h2>
+
+<div id="products">
+
+<figure>
+<%= image_tag "products/AF1.png" %> 
+<figcaption> Nike Air Force 1 <br> Price: $8999 <br> Description: "Nobody ever said that being an icon was easy. That's why the Nike Air Force 1 Men's Shoe works hard to keep you feeling and looking your best. The leather and textile upper is big on style and the metal tag at the laces gives a nod to the shoe's more than 30-year history. A Nike Air unit in the foam midsole delivers the lightweight cushioning that you demand, so you stay comfortable on or off the court. Named after the aircraft that carries the U.S. President, the Air Force 1 continues to be a true leader in the world of footwear." </figcaption>
+</firgure>
+
+<figure>
+<%= image_tag "products/airmax.png" %>
+<figcaption> Nike Air Max "Infrared" 90's Price: $25000 <br> Description: "It’s all Air Max, all day, here at Nice Kicks. Today’s Live Look video review spotlights a remixed version of a classic, the Nike Air Max 90 Ice “Infrared”. This rendition of the model matches a seamless upper with an angular print all over, as well as a translucent sole that allows everyone to see the inner elements of the shoe. Borrowing the iconic “Infrared” style code from the original Air Max 90, this colorway of the Ice adds depth to the tone. Get a full video look at the model above, and then celebrate Air Max Day right now by scooping up a pair from shopnicekicks." </figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/carmines.png" %>
+<figcaption> Air Jordan 6 "Carmines" <br> Price: $300 <br> Description: "Jordan Brand is making sure that anyone who didn’t have these classic colorways will get their chance next year in 2015 with releases such as the Air Jordan 6 “Carmine”. Releasing next year for the 23rd anniversary of the Air Jordan 6 is the Carmine colorway."</figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/coralines.png" %>
+<figcaption> Nike SB Dunks High "Coralines" <br> Price: $450 <br> Description: "These dope Dunks were made to celebrate Laika‘s (Nike CEO Phil Knight’s studio) first full-length animated film, Coraline, a story by Neil Gaiman and directed by Henry Selick (the director of The Nightmare Before Christmas). Taking the handcrafted style of the film as inspiration, this special edition features a unique hand sewn black visible seam on the upper ensuring each pair is unique. The hidden detail is the glow-in-the-dark sole which reflects the film’s sense of curiosity. The props were made by the Laika artist and are hand painted, there are only 50 mouse and cat heads and they are 1 of 50 as each cat mouth is unique. For the film 100,000 cat mouths were created to show the cats expression and make it talk. Only 50 were used on these dunks and every one is different. The mouse and cat tails double as protection against jean stains"</figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/durants.png" %>
+<figcaption> Durant Fourth Of July Special Release <br> Price: $120 <br> Description: "Kevin Durant’s seventh signature shoe fuses performance innovation with a creative narrative across five color ways that are centered on the weather. Nike designer Leo Chang created an innovative shoe for Durant that meets the needs of the reigning MVP’s quickness, power and unpredictability, just like the forces of nature. Creatively, Chang applied Durant’s on- and off-court insights that are brought to life through color blocking, graphics and textures to tell stories that are both personal and inspired."</figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/Ironmans.png" %>
+<figcaption> Name: Nike High SB "Ironmans" <br> Price: $350 <br> Description: "The wait for the Ironman/Un Lobster Nike SB Dunk High Premium is finally over. The sneaker may be modeled after the Marvel character but affiliation aside the colorway itself is simply dope."</figcaption>
+</figure>
+
+
+<br>
+
+<figure>
+<%= image_tag "products/kobe.png" %>
+<figcaption> Nike Kobe 7 "Playoff Home" <br> Price: $250 <br> Description: "Starting with the colorway, Nike kept it simply white and black for the Home and Away version, letting the hints of gold throughout speak to the player’s ultimate goal. Carbon fiber has been added to to increase the heel support, while the upper has been returned to the polyurethane islands we saw on the Nike Zoom Kobe 6. Finally Nike has given us a full-length Zoom for just the right amount of cushion. Look for the Nike Zoom Kobe VII Elite to release on April 20."</figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/Lebrons.png" %>
+<figcaption> Nike Lebron 11s <br> Price: $250 <br> Description: "Sneakerheads, gather 'round. Several of Nike's top innovations come together for the next chapter in the LeBron James signature series by Nike. Up your street cred in the Men's Nike LeBron XI Basketball Shoes, the latest and greatest kicks tubist for one of the game's most explosive players.</figcaption>
+</figure>
+
+<br>
+
+<figure>
+<%= image_tag "products/Reebok.png" %>
+<figcaption> Reebok Pumps <br> Price: $125 <br> Description: "In the 1991 NBA Slam Dunk contest Dee Brown of the Boston Celtics bent down, pumped up his Reebok Pump Omni Lite sneakers, executed a "no look" dunk, and cemented their legacy in basketball history. This original concept by Reebok allows you to customize your sneakers by pumping up an internal air bladder for a snug fit. The Reebok Pump Omni Lite also features Hexalite technology for enhanced shock absorption."</figcaption>
+</figure>
+
+</div>
