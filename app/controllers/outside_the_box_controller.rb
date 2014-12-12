@@ -18,15 +18,13 @@ class OutsideTheBoxController < ApplicationController
 
   def shopping_cart
     p session[:cart]
-    @products = Product.each[:id]
-  end
-
-  def show_cart
+    # @products_in_cart = Product.each[:id]
     @products = []
 
     session[:cart].each do |id|
       @products << Product.find(id.to_i)
     end
+
   end
 end
 
