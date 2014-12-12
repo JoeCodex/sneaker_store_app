@@ -17,10 +17,11 @@ class Product < ActiveRecord::Base
 		data = Nokogiri::HTML(open(url))
 		sneakers = data.css(".hentry")
 		# p sneakers
+		sneakers.shift
 		sneakers.each do |sneaker|
 			name = sneaker.css('.entry-title a').text
-			date = sneaker.css('.dstart').text
-			price = sneaker.css('.tribe-events-event-cost span').text
+			date = sneaker.css('.dtstart').text
+			price = sneaker.css('.tribe-events-event-cost span').text[1..-1]
 			Product.create(name: name, release: date, price: price, 
 						   inshop: false)
 
