@@ -19,7 +19,7 @@ class Product < ActiveRecord::Base
 		# p sneakers
 		sneakers.shift
 		sneakers.each do |sneaker|
-			name = sneaker.css('.entry-title a').text
+			name = sneaker.css('.entry-title').text
 			date = sneaker.css('.dtstart').text
 			price = sneaker.css('.tribe-events-event-cost span').text[1..-1]
 			Product.create(name: name, release: date, price: price, 
