@@ -96,13 +96,14 @@ a.button:hover {
   width: 640px;
   position: absolute;
   right: 0;
-  top:32px;
+  top:62px;
   height: 100px;
   background: black;
   text-align: center;
   color: white;
   background-color: #2C5463;
   border-radius: 10px;
+  margin: 0;
   font: bold 2em/50px "Carter One", Arial, Helvetica, Geneva, sans-serif;
 }
 
@@ -120,7 +121,7 @@ hr.style-four {
 font-family: "Lobster"}
 
 .mid_container {
-   position: relative;
+   /*position: relative;*/
 }
 
 /*.menu {
@@ -132,8 +133,8 @@ font-family: "Lobster"}
 nav {
    background-color:#2C5463;
    height:40px;
-   position: absolute;
    right: 0;
+   margin-top: 20px;
 }
 
 
@@ -211,6 +212,8 @@ nav ul li ul li a {
 
 div#slideshow {
      top: 100px;
+     margin: 0 auto 50px auto;
+
 }
 
 .slider {
