@@ -20,7 +20,7 @@
  body {
        margin: 0;
        padding: 0;
-
+        color: white;
         background: #466368;
         /*background: -webkit-linear-gradient(#648880, #293f50);
         background:    -moz-linear-gradient(#648880, #293f50);
@@ -107,7 +107,6 @@ a.button:hover {
   font: bold 2em/50px "Carter One", Arial, Helvetica, Geneva, sans-serif;
 }
 
-/* Single-direction drop shadow */
 
 hr.style-four {
     height: 12px;
@@ -121,13 +120,9 @@ hr.style-four {
 font-family: "Lobster"}
 
 .mid_container {
-   /*position: relative;*/
+  min-height: 500px;
 }
 
-/*.menu {
-    width: 130px;
-    height: 40px;
-}*/
 /* ********  START NAV MENU  ************************* */
 
 nav {
