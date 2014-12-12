@@ -7,6 +7,10 @@
   		<%= product.name %> <br>
   		$<%= product.price/100.00 %> <br>
   		<%= product.description %>
+  		<a href="shopping_cart" class="button">Add To Bag</a>
+  		<%= link_to ("ADD TO BAG"), "/shopping_cart/products/#{ product.id }", method: :post %>
 	<% end %>
 
+
 </div>
+
