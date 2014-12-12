@@ -6,6 +6,9 @@
   <%= product.description %>
 <% end %>
 
+=======
+
+
 <h2>Current Stock</h2>
 
 <div id="products">
@@ -55,19 +58,26 @@
   <%= image_tag "products/kobe.png" %>
   <figcaption> Nike Kobe 7 "Playoff Home" <br> Price: $250 <br> Description: "Starting with the colorway, Nike kept it simply white and black for the Home and Away version, letting the hints of gold throughout speak to the player’s ultimate goal. Carbon fiber has been added to to increase the heel support, while the upper has been returned to the polyurethane islands we saw on the Nike Zoom Kobe 6. Finally Nike has given us a full-length Zoom for just the right amount of cushion. Look for the Nike Zoom Kobe VII Elite to release on April 20."</figcaption>
 </figure>
+=======
+<% @products.each do |product| %>
 
-<br>
+<%= image_tag product.photo.url(:medium) %> <br>
+<%= product.name %> <br>
+$<%= product.price/100.00 %> <br>
+<%= product.description %>
 
 <figure>
   <%= image_tag "products/Lebrons.png" %>
   <figcaption> Nike Lebron 11s <br> Price: $250 <br> Description: "Sneakerheads, gather 'round. Several of Nike's top innovations come together for the next chapter in the LeBron James signature series by Nike. Up your street cred in the Men's Nike LeBron XI Basketball Shoes, the latest and greatest kicks tubist for one of the game's most explosive players.</figcaption>
 </figure>
+=======
 
-<br>
+<% end %>
 
 <figure>
   <%= image_tag "products/Reebok.png" %>
   <figcaption> Reebok Pumps <br> Price: $125 <br> Description: "In the 1991 NBA Slam Dunk contest Dee Brown of the Boston Celtics bent down, pumped up his Reebok Pump Omni Lite sneakers, executed a "no look" dunk, and cemented their legacy in basketball history. This original concept by Reebok allows you to customize your sneakers by pumping up an internal air bladder for a snug fit. The Reebok Pump Omni Lite also features Hexalite technology for enhanced shock absorption."</figcaption>
 </figure>
+=======
 
 </div>
