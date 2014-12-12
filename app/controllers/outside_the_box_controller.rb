@@ -6,10 +6,11 @@ class OutsideTheBoxController < ApplicationController
   end
 
   def product
-    @products = Product.all
+    @products = Product.where(inshop: true)
   end
 
   def release
+    @products = Product.where(inshop: false)
   end
 
   def contact
