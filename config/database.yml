@@ -13,10 +13,7 @@ default: &default
 development:
   adapter: sqlite3
   encoding: unicode
-<<<<<<< HEAD
   pool: 5
-=======
->>>>>>> 98cb6d80e9d59bc4acbb135d76b997992ebd49b6
   database: db/development.sqlite3
 
 # Warning: The database defined as "test" will be erased and
@@ -25,15 +22,9 @@ development:
 test:
   adapter: sqlite3
   encoding: unicode
-<<<<<<< HEAD
   pool: 5
-=======
->>>>>>> 98cb6d80e9d59bc4acbb135d76b997992ebd49b6
   database: db/test.sqlite3
 
 production:
   <<: *default
-<<<<<<< HEAD
-=======
 
->>>>>>> 98cb6d80e9d59bc4acbb135d76b997992ebd49b6
