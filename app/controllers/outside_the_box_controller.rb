@@ -16,7 +16,6 @@ class OutsideTheBoxController < ApplicationController
   def contact
   end
 
-  def shopping_cart
 
     def add_to_cart
       if session[:cart]
@@ -27,13 +26,15 @@ class OutsideTheBoxController < ApplicationController
       redirect_to :back
   end
 
-  def show_cart
-    p sessions [:cart]
+  def shopping_cart
+
+    p session[:cart]
+    # @products_in_cart = Product.each[:id]
     @products = []
 
     session[:cart].each do |id|
       @products << Product.find(id.to_i)
     end
+
   end
-end
 end
