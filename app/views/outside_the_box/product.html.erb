@@ -1,15 +1,25 @@
+
 <h2>Current Stock</h2>
 
-<div class="table_container">
+<div id="products">
 	<% @products.each do |product| %>
 		<div class="product">
 			<%= image_tag product.photo.url(:medium) %>
 			<%= product.name %> <br>
 			$<%= product.price/100.00 %> <br>
 			<%= product.description %><br />
-			<div class="add2"><a class= "add" href="#" >Add to Cart</a></div>
+			<div class="add2"><a class= "button" href="shopping_cart" >Add to Bag</a></div>
+			<%= link_to ("ADD TO BAG"), "/shopping_cart/products/#{ product.id }", method: :post %>
 		</div>
-	<% end %>
-</div>
+<!-- =======
+  		<%= image_tag product.photo.url(:medium) %> <br>
+  		<%= product.name %> <br>
+  		$<%= product.price/100.00 %> <br>
+  		<%= product.description %>
+  		<a href="shopping_cart" class="button">Add To Bag</a>
+  		<%= link_to ("ADD TO BAG"), "/shopping_cart/products/#{ product.id }", method: :post %>
+>>>>>>> 98cb6d80e9d59bc4acbb135d76b997992ebd49b6
+	<% end %> -->
 
-<div class="clearfixer"></div>
+
+<!-- </div> -->

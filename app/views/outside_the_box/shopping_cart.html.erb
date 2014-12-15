@@ -1,6 +1,5 @@
 <h2>Your Shopping Cart</h2>
 
-<%=@products.inspect %>
 
 <% if @products.nil? %>
   <strong>Cart is Currently Empty</strong>
@@ -10,8 +9,10 @@
       <li>
         <a href=<%= "/products/#{ product.id }" %>>
         <%= product.name %>
-        </a>:   <em><%= product.price %></em>
+        </a>:   <em><%= product.price/100.00 %></em>
       </li>
     <% end %>
   </ul>
 <% end %>
+
+<a href="checkout" class="button">Checkout</a>

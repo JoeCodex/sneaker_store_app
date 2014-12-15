@@ -17,14 +17,15 @@ class OutsideTheBoxController < ApplicationController
   end
 
 
-    def add_to_cart
-      if session[:cart]
-        session[:cart] << params[:id]
-      else
-        session = [params[:id]]
-      end
-      redirect_to :back
+  def add_to_cart
+    if session[:cart]
+      session[:cart] << params[:id]
+    else
+      session[:cart] = [ params[:id] ]
+    end
+    redirect_to :back
   end
+
 
   def shopping_cart
 
