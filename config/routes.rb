@@ -11,6 +11,6 @@ Rails.application.routes.draw do
 
   get 'shopping_cart' => 'outside_the_box#shopping_cart'
 
-  post "/shopping_cart/products/:id" => "outside_the_box#shopping_cart"
+  post "/shopping_cart/products/:id" => "outside_the_box#add_to_cart"
 
 end
