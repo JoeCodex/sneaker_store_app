@@ -21,7 +21,7 @@
        margin: 0;
        padding: 0;
         color: white;
-       background-image: url("Wood-Background.jpg")
+       background-image: url("Wood-Background.jpg");
         /*background: #466368;*/
         /*background: -webkit-linear-gradient(#648880, #293f50);
         background:    -moz-linear-gradient(#648880, #293f50);
@@ -32,7 +32,7 @@
     width: 960px;
     min-height: 800px;
     margin: 0 auto;
-    background-image: url("Wood-Background.jpg")
+    background-image: url("Wood-Background.jpg");
     /*background: radial-gradient(#648880, #293f50);*/
 }
 
@@ -131,7 +131,7 @@ hr.style-four {
 /* ********  START NAV MENU  ************************* */
 
 nav {
-   background-color:#background: -webkit-radial-gradient(#000, #696969);;
+   background-color: -webkit-radial-gradient(#000, #696969);
    height:40px;
    right: 0;
    margin-top: 20px;
@@ -148,7 +148,7 @@ nav ul {
 
 nav ul li {
   display: block;
- # position: relative;
+  position: relative;
   float: left;
 
 }
