@@ -16,6 +16,15 @@ class OutsideTheBoxController < ApplicationController
   def contact
   end
 
+  def add_to_cart
+    if session[:cart]
+      session[:cart] << params[:id]
+    else
+      session[:cart] = [ params[:id] ]
+    end
+    redirect_to :back
+  end
+
   def shopping_cart
     p session[:cart]
     # @products_in_cart = Product.each[:id]
