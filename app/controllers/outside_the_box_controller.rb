@@ -17,16 +17,18 @@ class OutsideTheBoxController < ApplicationController
   end
 
   def shopping_cart
-    
-    def add_to_cart
-    puts "------MAKING COOKIES--------"
-    session[:cart] << params[:id]
 
-    p session[:cart]
-    redirect_to :back
+    def add_to_cart
+      if session[:cart]
+        session[:cart] << params[:id]
+      else
+        session = [params[:id]]
+      end
+      redirect_to :back
   end
 
   def show_cart
+    p sessions [:cart]
     @products = []
 
     session[:cart].each do |id|
@@ -35,4 +37,3 @@ class OutsideTheBoxController < ApplicationController
   end
 end
 end
-
