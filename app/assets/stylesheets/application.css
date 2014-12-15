@@ -21,6 +21,7 @@
        margin: 0;
        padding: 0;
         color: white;
+        background: -webkit-linear-gradient(#648880, #293f50);
        background-image: url("Wood-Background.jpg");
         /*background: #466368;*/
         /*background: -webkit-linear-gradient(#648880, #293f50);
@@ -32,6 +33,7 @@
     width: 960px;
     min-height: 800px;
     margin: 0 auto;
+    background: -webkit-linear-gradient(#648880, #293f50);
     background-image: url("Wood-Background.jpg");
     /*background: radial-gradient(#648880, #293f50);*/
 }
