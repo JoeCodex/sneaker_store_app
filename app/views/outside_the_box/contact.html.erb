@@ -1,25 +1,38 @@
 <h2>Contact Us</h2>
+<div class="cont">
+	<table>
+		<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+			<tr>
+			<div class="row">
+			<td><label for="name">Name:</label></td>
+				<td><input id="name" class="input" name="name" type="text" value="" size="30" /><br /></td>
+			</div>
+		</tr>
+		<tr>
+			<div class="row">
+				<td><label for="email">Email:</label></td>
+				<td><input id="email" class="input" name="email" type="text" value="" size="30" /><br /></td>
+			</div><br />
+		</tr>
+		<tr>
+			<div class="row">
+				<td class="msg"><label for="message">Message:</label></td>
+				<td><textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br /></td>
+			</div>
+		</tr>
+		<tr>
+			<td><a href="#"><input id="submit_button" type="submit" value="Send Email" /></a></td>
+		</tr>
+		</form>
+	</table>
 
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-	<div class="row">
-		<label for="name">Name:</label><br />
-		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	<div id="phone">
+		<p><b>Contact Number:</b> 1-212-867-5309</p>
+		<p><b>Email:</b> outsidethebox@gmail.com</p>
 	</div>
-	<div class="row">
-		<label for="email">Email:</label><br />
-		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-	</div>
-	<div class="row">
-		<label for="message">Message:</label><br />
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-	</div>
-	<input id="submit_button" type="submit" value="Send Email" />
-</form>
+	<div class="clearfixer"></div>
+</div>
 
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=90%20John%20St%20%23404%2C%20New%20York%2C%20NY%2010038&key=AIzaSyDjZk-Faxhh8iT84__mzlSb4ePM32t1z1s"></iframe>
-
-
-<div id="phone">
-	Contact Number: 1-212-867-5309
-	Email: Outsidethebox@gmail.com
+<div class="iframe">
+  <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=90%20John%20St%20%23404%2C%20New%20York%2C%20NY%2010038&key=AIzaSyDjZk-Faxhh8iT84__mzlSb4ePM32t1z1s" align="center"></iframe>
 </div>

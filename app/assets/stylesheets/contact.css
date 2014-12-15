@@ -1,0 +1,26 @@
+.msg {
+  vertical-align: top;
+}
+
+.iframe {
+  margin: 100px 0;
+  text-align:center;
+  width:100%;
+}
+
+#phone {
+  float: left;
+  margin-left: 240px;
+}
+
+.cont {
+  width: 840px;
+}
+
+table {
+  float:left
+  }
+
+.clearfixer {
+  clear: both;
+}

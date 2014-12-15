@@ -1,12 +1,15 @@
-
 <h2>Current Stock</h2>
 
-<div id="products">
+<div class="table_container">
 	<% @products.each do |product| %>
-  		<%= image_tag product.photo.url(:medium) %> <br>
-  		<%= product.name %> <br>
-  		$<%= product.price/100.00 %> <br>
-  		<%= product.description %>
+		<div class="product">
+			<%= image_tag product.photo.url(:medium) %>
+			<%= product.name %> <br>
+			$<%= product.price/100.00 %> <br>
+			<%= product.description %><br />
+			<div class="add2"><a class= "add" href="#">Add to Cart</a></div>
+		</div>
 	<% end %>
-
 </div>
+
+<div class="clearfixer"></div>
